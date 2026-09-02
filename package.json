@@ -1,0 +1,49 @@
+{
+  "name": "ctxscrub",
+  "version": "0.1.0",
+  "description": "Scrub secrets, strip bloat, pack a clean prompt — before you paste it into an LLM.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Hubert (hlsitechio)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlsitechio/ctxscrub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hlsitechio/ctxscrub/issues"
+  },
+  "homepage": "https://github.com/hlsitechio/ctxscrub",
+  "keywords": [
+    "llm",
+    "prompt",
+    "secrets",
+    "redact",
+    "pii",
+    "ai",
+    "context",
+    "claude",
+    "openai",
+    "grok",
+    "cursor",
+    "agents.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "ctxscrub": "./bin/ctxscrub.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --experimental-strip-types --test src/scan.test.ts",
+    "cli": "node --experimental-strip-types bin/cli.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
